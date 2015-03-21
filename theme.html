@@ -162,6 +162,7 @@
           </ul>
           {% endif %}
 
+          <!--
           <div class="post-info">
             <div class="info-left">
               {{ theme.social.bar }}
@@ -170,7 +171,27 @@
               <p class="date"><span class="typcn typcn-calender"></span> {{ post.created_at|format_date }}</p>
             </div>
           </div>
+          -->
 
+          <div class="post-footer">
+          <a class="post-author" href="{{ site.base_url }}">
+            {% if post.author %}
+            <img src="{{ post.author.avatar }}" />
+            {% endif %}
+            <p>
+              {% if post.author %}
+              <span class="post-author-name">{{ post.author.name }}</span>
+              {% endif %}
+              <span class="post-date">Posted on {{ post.created_at|format_date }}</span>
+            </p>
+          </a>
+          <ul class="post-options">
+            <li>{{ theme.social.share }}</li>
+            <li>{{ theme.social.follow }}</li>
+            <li>{{ theme.social.like }}</li>
+          </ul>
+        </div>
+        
           {% if site.disqus %}
           <div class="post-comments">
             <div id="disqus_thread"></div>
