@@ -1,14 +1,21 @@
-@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic);
-@import url(http://postach.io/static/themes/_assets/css/typicons.css);
-@import url(http://postach.io/static/themes/_assets/less/elements.less);
+@import "http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic";
+@import "http://postach.io/static/themes/_assets/css/typicons.css";
+@import "http://postach.io/static/themes/_assets/less/elements.less";
 
-@black: #000;
-@white: #fff;
-@text: #ed1a23;
+
+
 @link: #44a084;
 @hover: #ee770d;
 
-@gutter: 35px;
+@gutter: 50px;
+
+@black: #636363;
+@white: #ffffff;
+@red: #f76f4f;
+@green: #37cca2;
+@text: #0e3029;
+@lighttext: #afb7b5;
+@hr: #dfe1e1;
 
 body {
     margin: 0;
@@ -642,5 +649,9 @@ div.pagination {
         min-height: 400px
     }
 }
+@import 'modules/type.less';
+@import 'modules/post.less';
+@import 'modules/footer.less';
+@import 'modules/bio.less';
 
-@import url(http://postach.io/static/themes/_assets/less/login.less);
+@import "http://postach.io/static/themes/_assets/less/login.less";
